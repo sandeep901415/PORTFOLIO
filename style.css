@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+    overflow-x: hidden;
+}
+
+/* PARTICLE BACKGROUND */
+#particles {
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(56,189,248,0.15), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(168,85,247,0.15), transparent 40%),
+        radial-gradient(circle at 50% 80%, rgba(34,197,94,0.15), transparent 40%);
+    z-index: -1;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.links a {
+    margin: 0 12px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+.section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    padding: 10px 16px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.skills span:hover {
+    transform: scale(1.1);
+}
+
+/* PROJECT CARDS */
+.project-card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.08);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.project-card span {
+    color: #38bdf8;
+    font-size: 14px;
+}
+
+.education-card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.08);
+    transition: transform 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.education-card h3 {
+    margin-bottom: 5px;
+    color: #38bdf8;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #94a3b8;
+}
+
+/* ANIMATIONS */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay {
+    transition-delay: 0.4s;
+}
+
+.delay-2 {
+    transition-delay: 0.8s;
+}
